@@ -20,10 +20,74 @@
                     <div>
 
                     </div>
+
+                    <div>
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email"
-                    placeholder="Escreva seu email">
+                    placeholder="Escreva seu email"/>
+                </div>
+                    
+
+                        <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="digite o seu telefone" />
+                    </div>
+
+                    <div>
+                    <label for="estados">Estado</label>
+                    <select>
+                        <option value="AC">AC</option>
+                        <option value="SP">SP</option>
+                        <option value="SP">RJ</option>
+                    </select>
+                    </div>     
             </fieldset>
+
+            <fieldset>
+                <legend>Informações
+                </legend>
+                <label for="site">Site</label>
+                <input type="url" id="site" name="site">
+
+                <label for="senha">Senha</label>
+                <input 
+                type="passoword"
+                name="senha"
+                id="senha"
+                placeholder="Digite sua senha"
+                />
+
+                <label for="nascimento">Data de nascimento</label>
+                <input type="date"
+                name="nasciumento"
+                id="nascimento"
+                />
+            </fieldset>
+            <!-- checked- especifica um elemento que deve ser pre selecionado-->
+             <fieldset>
+             <input type="checkbox"
+             name="autorização" checked/>
+             <label for="autorização"> Concordo que utilizei meus dados bancaruos sejam divulgados</label>
+
+             <p>O uso desse site é protegio pela lei geal de proteção de dados </p>
+            </fieldset>
+             <fieldset>
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPFnpReoCaeCNzdVh2YrxWWJcCCtHBMWQOWg&s" 
+             alt=""
+             width="100"
+             />
+            <!-- o input tipo radio serve para selecionar apenas uma opção, eles precisam trabalhar em grupo, e esse grupo é separado atraves do agtributo name, precisa ter o mesmo name pra todos-->
+             <input type="radio"
+             name="robo"
+             id="sourobo"/>
+             <label for="sim">Sou um robo</label>
+
+             <input type="radio" name="robo" id="naosourobo"/>
+             <label for="não">Não sou um robo</label>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+            <button>Enviar</button>
 
 
         </form>
